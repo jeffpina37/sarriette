@@ -1,0 +1,208 @@
+.NavBar-container  {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131112;
+    box-shadow: 1px 0px 4px #f0eff06e;
+    position: absolute;
+   
+   }
+  
+   
+   .navbar-photo{
+     display: block;
+     width: 7rem ;
+     padding-top: 5px;
+   }
+   
+   .nav-links {
+     list-style: none;
+     padding-right: 0rem;
+   }
+   
+   li, Link{
+     font-size: 14px;
+     color: #f0eff0;
+     text-decoration: none;
+     appearance: none;
+     border: none;
+     outline: none;
+     display: inline-block;
+     align-items: center;
+     
+   }
+   
+   .nav-links  li {
+     padding: 0px 30px;
+     cursor: pointer;
+   }
+   
+   .nav-links  li a {
+     font-size: 16px;
+     font-weight: 350;
+     color: #555555;
+     transition: all 0.3s ease 0s;
+     text-decoration: none;
+   }
+
+   .nav-links a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.checkbtn{
+  color: #f0eff0;
+}
+
+.inst{
+  height: 200%;
+  width: 200%;
+}
+  
+
+
+
+@media only screen and (max-width: 1110px) {
+  .Hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.2s ease-out 0.2s;
+    z-index: 2;
+  }
+  
+  .Hamburger{
+    width: 100%;
+    height: 2.8px;
+    background-color: #f0eff0a8;
+    transition: all 0.2s ease-in 0.2s;
+  }
+
+ .line1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+    background-color: #f0eff0a8;
+    width: 100%;
+    height: 3px;
+    transition: all 0.2s ease-out 0.2s;
+  }
+
+  .line2{
+    opacity: 0;
+    transition: all 0.2s ease-out 0.2s;
+  }
+
+ .line3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+    background-color: #f0eff0a8;
+    width: 100%;
+    height: 3px;
+    transition: all 0.2s ease-out 0.2s;
+  }
+
+
+   .NavBar{
+     display: none;
+  
+   }
+
+   .NavBar-container  {
+    display: none;
+    
+   
+   }
+
+   .NavBar-container2 {
+    width: 100%;
+    height: 100%;
+    background-color: #131112;
+    box-shadow: 1px 0px 10px #f0eff013;
+    position: fixed;
+    top:0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 0% 0% 0%;
+    transition: all 0.4s ease-out 0.4s;
+    z-index: 2;
+    
+   } 
+
+  .nav-links {
+    list-style: none;
+    padding-right: 0rem;
+  
+  
+  }
+ 
+  li, Link{
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+   margin: 29px;    
+  }
+
+     
+  .nav-links  li a {
+    font-size: 30px;
+    font-weight: 350;
+    color: #555555;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 10px 0px;
+    
+
+  }
+  .navbar-photo{
+    width: 12rem;
+    display: block;
+    
+  }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-photo{
+    width: 10rem;
+  }
+       
+  .nav-links  li a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .navbar-photo{
+    width: 8rem;
+
+  }
+       
+  .nav-links  li a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,39 @@
+.event-body{
+    background-color: #131112;
+    font-size: 18px;
+    height: 100vh;
+}   
+
+.event-body-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20% 5%;
+}
+.event-logo img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px){
+
+    .event-body{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+    }   
+    .event-body-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 1200px;
+    }
+    .event-logo img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}

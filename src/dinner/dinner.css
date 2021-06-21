@@ -1,0 +1,23 @@
+.dinner-container{
+    background-color: #131112;
+}
+
+.dinner-container-wrapper{
+    display: flex;
+}
+.dinner-container-wrapper img{
+    display: block;
+    width: 30%;
+    margin: 15% auto;
+}
+
+@media screen and (max-width: 700px){
+    .dinner-container-wrapper{
+        flex-direction: column;
+    }
+    .dinner-container-wrapper img{
+        display: block;
+        width: 97%;
+        margin: 18% auto 3% auto;
+    }
+}
